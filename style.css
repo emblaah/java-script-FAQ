@@ -16,16 +16,16 @@ html {
   transition: all 0.5s ease-in-out;
 }
 
-.active + .description {
+.title.active .description {
   display: block;
   max-height: 500px;
-  padding: 10px;
+  padding: 10px 0 10px 0;
 }
 
 h1 {
   display: block;
   text-align: center;
-  padding: 10px;
+  padding: 10px
 }
 
 li:nth-child(odd) {
@@ -36,9 +36,6 @@ li:nth-child(even) {
   background-color: rgb(181, 246, 247);
 }
 
-/* li .description {
-  color: inherit;
-} */
 li:nth-child(odd):hover p {
   background-color: rgb(236, 236, 195);
   cursor: pointer;
@@ -57,22 +54,28 @@ p:hover {
   transition: background-color 0.2s ease-in-out;
 }
 
-.title {
-  /* display: flex;
-  flex-direction: column; */
-  /* border: black solid 2px; */
-  border-radius: 5px;
-}
-
 p {
   font-weight: bold;
   padding: 10px;
 }
 
-.listStyle {
-  padding: 10px;
+.title {
+  display: flex;
+  flex-direction: column;
+  border: black solid 2px;
+  border-radius: 5px;
+  margin: 2px;
 }
 
-li::marker {
-  content: none;
+
+
+.listStyle {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+li {
+  list-style-type: none;
 }
