@@ -25,7 +25,7 @@ html {
 h1 {
   display: block;
   text-align: center;
-  padding: 10px
+  padding: 10px;
 }
 
 li:nth-child(odd) {
@@ -66,8 +66,6 @@ p {
   border-radius: 5px;
   margin: 2px;
 }
-
-
 
 .listStyle {
   padding: 10px;
